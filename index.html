@@ -1,4 +1,12 @@
 <object data="/resume-ahmetgoksu-conf.pdf" type="application/pdf" width="100%" height="100%">
+  <script>
+    window.onload = function() {
+      if (!navigator.plugins || !navigator.plugins.length || !navigator.plugins['Adobe Acrobat']) {
+        window.location.href = "/resume-ahmetgoksu-conf.pdf";
+      }
+    }
+  </script>
+
   <p>Seems like your browser doesn't have a PDF plugin.
   Instead you can <a href="/resume-ahmetgoksu-conf.pdf">click here to
  see my resume.</a></p>
